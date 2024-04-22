@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quiz Application</h1>
+      <form id="quizForm">
+        <label for="quizHeading">Quiz Heading:</label>
+        <input type="text" id="quizHeading" name="quizHeading" required /><br />
+        <label for="quizTopic">Quiz Topic:</label>
+        <input type="text" id="quizTopic" name="quizTopic" required /><br />
+        <h2>Multiple Choice Questions</h2>
+        <div class="questionsContainer">
+          <ol>
+            <li>
+              <label for="q1">What is the capital city of Pakistan?</label
+              ><br />
+              <input type="hidden" id="q1Correct" value="Islamabad" />
+              <input
+                type="radio"
+                id="q1a"
+                name="q1a"
+                value="Islamabad"
+                required
+              />
+              <label for="q1a">Islamabad</label><br />
+              <input type="radio" id="q1b" name="q1a" value="Karachi" />
+              <label for="q1b">Karachi</label><br />
+              <input type="radio" id="q1c" name="q1a" value="Lahore" />
+              <label for="q1c">Lahore</label><br />
+              <input type="radio" id="q1d" name="q1a" value="Quetta" />
+              <label for="q1d">Quetta</label><br />
+            </li>
+            <li>
+              <label for="q2">Which river is the longest in Pakistan?</label
+              ><br />
+              <input type="hidden" id="q2Correct" value="Indus River" />
+              <input
+                type="radio"
+                id="q2a"
+                name="q2a"
+                value="Indus River"
+                required
+              />
+              <label for="q2a">Indus River</label><br />
+              <input type="radio" id="q2b" name="q2a" value="Jhelum River" />
+              <label for="q2b">Jhelum River</label><br />
+              <input type="radio" id="q2c" name="q2a" value="Ravi River" />
+              <label for="q2c">Ravi River</label><br />
+              <input type="radio" id="q2d" name="q2a" value="Chenab River" />
+              <label for="q2d">Chenab River</label><br />
+            </li>
+            <li>
+              <label for="q3"
+                >Which mountain range is located in Pakistan?</label
+              ><br />
+              <input type="hidden" id="q3Correct" value="Himalayas" />
+              <input
+                type="radio"
+                id="q3a"
+                name="q3a"
+                value="Himalayas"
+                required
+              />
+              <label for="q3a">Himalayas</label><br />
+              <input type="radio" id="q3b" name="q3a" value="Rocky Mountains" />
+              <label for="q3b">Rocky Mountains</label><br />
+              <input type="radio" id="q3c" name="q3a" value="Andes" />
+              <label for="q3c">Andes</label><br />
+              <input type="radio" id="q3d" name="q3a" value="Alps" />
+              <label for="q3d">Alps</label><br />
+            </li>
+            <li>
+              <label for="q4"
+                >Which sport is the national sport of Pakistan?</label
+              ><br />
+              <input type="hidden" id="q4Correct" value="Field Hockey" />
+              <input
+                type="radio"
+                id="q4a"
+                name="q4a"
+                value="Field Hockey"
+                required
+              />
+              <label for="q4a">Field Hockey</label><br />
+              <input type="radio" id="q4b" name="q4a" value="Cricket" />
+              <label for="q4b">Cricket</label><br />
+              <input type="radio" id="q4c" name="q4a" value="Football" />
+              <label for="q4c">Football</label><br />
+              <input type="radio" id="q4d" name="q4a" value="Squash" />
+              <label for="q4d">Squash</label><br />
+            </li>
+            <li>
+              <label for="q5"
+                >Which famous ancient civilization is located in present-day
+                Pakistan?</label
+              ><br />
+              <input
+                type="hidden"
+                id="q5Correct"
+                value="Indus Valley Civilization"
+              />
+              <input
+                type="radio"
+                id="q5a"
+                name="q5a"
+                value="Indus Valley Civilization"
+                required
+              />
+              <label for="q5a">Indus Valley Civilization</label><br />
+              <input
+                type="radio"
+                id="q5b"
+                name="q5a"
+                value="Mesopotamian Civilization"
+              />
+              <label for="q5b">Mesopotamian Civilization</label><br />
+              <input
+                type="radio"
+                id="q5c"
+                name="q5a"
+                value="Egyptian Civilization"
+              />
+              <label for="q5c">Egyptian Civilization</label><br />
+              <input
+                type="radio"
+                id="q5d"
+                name="q5a"
+                value="Greek Civilization"
+              />
+              <label for="q5d">Greek Civilization</label><br />
+            </li>
+          </ol>
+        </div>
+        <button type="submit">Submit Quiz</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>
